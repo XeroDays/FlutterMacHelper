@@ -1,0 +1,13 @@
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_const_constructors : false
+    file_names : false
+    use_key_in_widget_constructors: false
+    non_constant_identifier_names: false
+    lines_longer_than_80_chars: false
+    prefer_const_literals_to_create_immutables: false
+    avoid_print: false
+    dead_code: false
