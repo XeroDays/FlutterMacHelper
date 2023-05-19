@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:macos/constants/utils.dart';
-import 'package:macos/controllers/home_controller.dart';
+import 'package:macos/screens/code_helper/code_helper_viewmodel.dart';
 import 'package:macos/widgets/custom_buttons.dart';
 import 'package:macos/widgets/custom_textfiled.dart';
 
-class Home extends StatelessWidget {
-  Home({super.key});
+class CodeHelper extends StatelessWidget {
+  CodeHelper({super.key});
 
-  HomeController homeController = HomeController();
+  CodeHelperViewmodel viewmodel = CodeHelperViewmodel();
 
   @override
   Widget build(BuildContext context) {
@@ -29,15 +29,15 @@ class Home extends StatelessWidget {
                 child: CustomTextField(
                     obsecureText: false,
                     labelName: "Class name",
-                    controller: homeController.txtModelName),
+                    controller: viewmodel.txtModelName),
               ),
               Row(
                 children: [
                   Obx(() => Checkbox(
-                      value: homeController.isNullable.value,
+                      value: viewmodel.isNullable.value,
                       onChanged: (a) {
-                        homeController.isNullable.value =
-                            !homeController.isNullable.value;
+                        viewmodel.isNullable.value =
+                            !viewmodel.isNullable.value;
                       })),
                   Text(
                     "Nullable",
@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
             "Initiate Proc Module",
             onClick: () {
               unfocusKeyboard(context);
-              homeController.initProc();
+              viewmodel.initProc();
             },
           )
         ],
@@ -71,7 +71,7 @@ class Home extends StatelessWidget {
           width: size.width * 0.4,
           child: CustomTextField(
             obsecureText: false,
-            controller: homeController.txtattributes,
+            controller: viewmodel.txtattributes,
             labelName: "Attributes",
             lines: 50,
           ),
@@ -82,7 +82,7 @@ class Home extends StatelessWidget {
           width: size.width * 0.6,
           child: CustomTextField(
             obsecureText: false,
-            controller: homeController.txtcode,
+            controller: viewmodel.txtcode,
             labelName: "Code",
             lines: 50,
           ),

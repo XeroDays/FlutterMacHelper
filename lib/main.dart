@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:macos/screens/home.dart';
+import 'package:macos/screens/home/home.dart';
 
 void main() {
   runApp(const MyApp());

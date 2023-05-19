@@ -6,14 +6,14 @@ import 'package:macos/constants/app_con.dart';
 import 'package:macos/models/attribute_model.dart';
 import 'package:macos/models/class_model.dart';
 
-class HomeController extends GetxController {
+class CodeHelperViewmodel extends GetxController {
   TextEditingController txtModelName = TextEditingController();
   TextEditingController txtattributes = TextEditingController();
   TextEditingController txtcode = TextEditingController();
 
   RxBool isNullable = false.obs;
 
-  HomeController() {
+  CodeHelperViewmodel() {
     txtModelName.text = "DemoModel";
   }
 
