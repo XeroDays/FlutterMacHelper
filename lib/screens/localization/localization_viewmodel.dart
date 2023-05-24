@@ -11,6 +11,7 @@ class LocalizationViewModel {
   TextEditingController txtCode = TextEditingController();
   TextEditingController txtMaps = TextEditingController();
   TextEditingController txtalt1 = TextEditingController();
+  TextEditingController txtalt2 = TextEditingController();
 
   process() {
     String clipDaata = "";
@@ -26,9 +27,10 @@ class LocalizationViewModel {
       code.value = code.replaceAll(' ', "_");
       code.value = code.toLowerCase();
       txtCode.text = code.value;
-      String resultt = "'${code.value}' : '$clipDaata',";
+      String resultt = '"${code.value}" : "$clipDaata",';
       result.value = resultt;
-      txtalt1.text = "'${code.value}'.tr";
+      txtalt1.text = '"${code.value}".tr';
+      txtalt2.text = '\${"${code.value}".tr}';
       txtMaps.text = resultt;
 
       Clipboard.setData(ClipboardData(text: "$resultt\n"));
