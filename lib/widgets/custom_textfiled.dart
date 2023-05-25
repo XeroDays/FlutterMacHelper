@@ -59,7 +59,7 @@ class CustomTextField extends StatelessWidget {
                 hintStyle: const TextStyle(
                   fontSize: 15,
                   fontFamily: 'Inter',
-                  color: Color(0xff000000),
+                  color: Color.fromARGB(255, 71, 71, 71),
                 ),
 
                 fillColor: const Color(0xffF6F6F6),
