@@ -2,20 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:macos/constants/utils.dart';
 import 'package:macos/screens/code_helper/code_helper.dart';
-import 'package:macos/screens/code_helper/code_helper_viewmodel.dart';
 import 'package:macos/screens/image_resizer/image_resizer.dart';
 import 'package:macos/screens/localization/localization.dart';
 import 'package:macos/screens/translator/translator.dart';
 import 'package:macos/widgets/custom_buttons.dart';
-import 'package:macos/widgets/custom_textfiled.dart';
 
 class Home extends StatelessWidget {
-  Home({super.key});
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
     return Scaffold(
       backgroundColor: Colors.grey.shade900,
       body: Column(

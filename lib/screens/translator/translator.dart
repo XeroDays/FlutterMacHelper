@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -22,15 +21,13 @@ class Translator extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 20),
-            Container(
-                child: Text("Translator",
-                    style: myStyle(20, true, color: Kprimary1))),
+            Text("Translator", style: myStyle(20, true, color: Kprimary1)),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
+                SizedBox(
                   width: Get.width * 0.5,
                   height: 50,
                   child: CustomTextField(
@@ -44,19 +41,15 @@ class Translator extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
-                              child: Text(
-                                "Total Words: ${viewModel.totalWords} ${viewModel.Status}",
-                                style: myStyle(20, true,
-                                    color: Color.fromARGB(255, 8, 186, 103)),
-                              ),
+                            Text(
+                              "Total Words: ${viewModel.totalWords} ${viewModel.Status}",
+                              style: myStyle(20, true,
+                                  color: Color.fromARGB(255, 8, 186, 103)),
                             ),
-                            Container(
-                              child: Text(
-                                "API Characters left: ${viewModel.totalLeft}",
-                                style: myStyle(12, true,
-                                    color: Color.fromARGB(255, 243, 48, 34)),
-                              ),
+                            Text(
+                              "API Characters left: ${viewModel.totalLeft}",
+                              style: myStyle(12, true,
+                                  color: Color.fromARGB(255, 243, 48, 34)),
                             ),
                           ],
                         )),

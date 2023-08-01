@@ -8,7 +8,7 @@ import 'package:macos/widgets/custom_textfiled.dart';
 class CodeHelper extends StatelessWidget {
   CodeHelper({super.key});
 
-  CodeHelperViewmodel viewmodel = CodeHelperViewmodel();
+  final CodeHelperViewmodel viewmodel = CodeHelperViewmodel();
 
   @override
   Widget build(BuildContext context) {

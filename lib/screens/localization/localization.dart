@@ -42,11 +42,9 @@ class LocalizationHome extends StatelessWidget {
               },
             ),
             SizedBox(height: 20),
-            Container(
-              child: Text(
-                "Features:\n 1. Get Data from clipboard.\n For Example \n 'Home Screen'\n\n 2.Process it. \n 3.Change it to map data.\n For Example \n 'home_screen' : 'Home Screen'\n\n 4. Paste it to clipboard.",
-                style: myStyle(10, false, color: Colors.grey.shade700),
-              ),
+            Text(
+              "Features:\n 1. Get Data from clipboard.\n For Example \n 'Home Screen'\n\n 2.Process it. \n 3.Change it to map data.\n For Example \n 'home_screen' : 'Home Screen'\n\n 4. Paste it to clipboard.",
+              style: myStyle(10, false, color: Colors.grey.shade700),
             )
           ],
         ),

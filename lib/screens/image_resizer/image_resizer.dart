@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:macos/screens/image_resizer/image_resizer_viewmodel.dart';
-import 'package:macos/widgets/custom_buttons.dart';
 
 class ImageResizer extends StatelessWidget {
   ImageResizer({super.key});
