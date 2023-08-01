@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:macos/constants/utils.dart';
 import 'package:macos/screens/code_helper/code_helper.dart';
 import 'package:macos/screens/code_helper/code_helper_viewmodel.dart';
+import 'package:macos/screens/image_resizer/image_resizer.dart';
 import 'package:macos/screens/localization/localization.dart';
 import 'package:macos/screens/translator/translator.dart';
 import 'package:macos/widgets/custom_buttons.dart';
@@ -45,6 +46,10 @@ class Home extends StatelessWidget {
                 SizedBox(height: 15),
                 CustomButton1("Map<> Language Translator", onClick: () {
                   Get.to(() => Translator());
+                }),
+                SizedBox(height: 15),
+                CustomButton1("Image Resizer", onClick: () {
+                  Get.to(() => ImageResizer());
                 }),
               ],
             ),
