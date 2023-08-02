@@ -10,9 +10,10 @@ class ImageResizerViewModel {
   RxList<File> selectedFiles = RxList();
 
   List<ImageFileFormat> imageFileFormals = [
-    ImageFileFormat(folderName: "Android", height: 1920, width: 892),
-    ImageFileFormat(folderName: "iOS", height: 100, width: 100),
-    ImageFileFormat(folderName: "iOS2", height: 100, width: 100),
+    ImageFileFormat(folderName: "Android", width: 892, height: 1920),
+    ImageFileFormat(folderName: "iOS 6.7", width: 1290, height: 2796),
+    ImageFileFormat(folderName: "iOS 6.5", width: 1242, height: 2688),
+    ImageFileFormat(folderName: "iOS 5.5", width: 1242, height: 2208),
   ];
 
   void onBrowseFile() async {
